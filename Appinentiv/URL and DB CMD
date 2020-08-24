@@ -1,0 +1,21 @@
+URL to call resources:
+GET:    List of all Movies : http://localhost:8080/api/allMovie  
+GET:    Movie on the basis of id: http://localhost:8080/api/Movie/103  (103 is id)
+POST:   Add movie: http://localhost:8080/api/addMovie(add Body)
+Delete: Delete movie: http://localhost:8080/api/deleteMovie/102
+PUT:    Update existing Movie : http://localhost:8080/api/deleteMovie/105
+
+
+DB Commands:
+
+Create database MovieDB;
+use MovieDB;
+create table movietable( ID INT NOT NULL primary key auto_increment,
+movie_title varchar(255), category varchar(255), rating float4);
+
+Insert into movietable value(101,'DDLJ','Drama',4.0);
+
+Insert into movietable value(102,'Matrix','Sci-Fic',4.5);
+
+
+Insert into movietable value(103,'InsideOut','Animation',5.0);
